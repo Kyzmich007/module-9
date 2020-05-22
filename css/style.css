@@ -85,7 +85,7 @@ button {
   padding-bottom: 138px;
 }
 .header-top {
-  margin-bottom: 44px;
+  margin-bottom: 36px;
 }
 .btn-header-top {
   display: flex;
@@ -123,7 +123,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .subtitle {
   font-family: var(--secondery-font);
@@ -134,8 +134,8 @@ button {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 18px;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .btn-header-bottom {
   border-radius: 20px;
@@ -155,6 +155,8 @@ button {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+}
+.wrap-title {
   margin-bottom: 18px;
 }
 .img img {
@@ -196,7 +198,7 @@ button {
   background-image: url(../img/icons/plane.png);
 }
 .partners-list {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 .partners-list-items-name {
   font-size: 0.875rem;
@@ -213,6 +215,7 @@ button {
   color: rgb(102, 102, 102);
   line-height: 1.2;
   text-align: center;
+  font-weight: 300;
 }
 .btn-partners {
   width: 280px;
@@ -227,4 +230,62 @@ button {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .partners-list-items:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .btn-header-top {
+    margin-bottom: 118px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../img/baner/baner768.png);
+    padding-top: 38px;
+    padding-bottom: 234px;
+  }
+  .header-top {
+    margin-bottom: 154px;
+  }
+  .title {
+    font-size: 3.25rem;
+    margin-bottom: 38px;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
+  }
+  .btn-header-bottom {
+    width: 226px;
+  }
+  .main {
+    padding-top: 74px;
+    padding-bottom: 40px;
+  }
+  .partners-title {
+    margin-bottom: 34px;
+  }
+  .btn-partners {
+    width: 192px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .partners-list-items:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 58px;
+  }
+}
+.partners-list {
+  margin-bottom: 38px;
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: url(../img/baner/baner1440.png);
+    padding-top: 38px;
+    padding-bottom: 234px;
+  }
+  .main {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
